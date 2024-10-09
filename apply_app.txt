@@ -1,0 +1,9 @@
+backend
+uvicorn backend.main:app --reload 
+
+frontend
+python -m http.server 8080
+
+
+# see the app in the web
+http://localhost:8080/

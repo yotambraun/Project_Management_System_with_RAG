@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Project Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold mb-4">AI-Powered Project Management</h1>
+        
+        <!-- Project Creation -->
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">Create Project</h2>
+            <input type="text" id="projectName" placeholder="Project Name" class="border p-2 mr-2">
+            <input type="text" id="projectDescription" placeholder="Project Description" class="border p-2 mr-2">
+            <button onclick="createProject()" class="bg-blue-500 text-white p-2 rounded">Create Project</button>
+        </div>
+        
+        <!-- Project List -->
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">Projects</h2>
+            <ul id="projectList" class="list-disc pl-5"></ul>
+        </div>
+        
+        <!-- Team Member Management -->
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">Team Members</h2>
+            <input type="text" id="teamMemberName" placeholder="Name" class="border p-2 mr-2">
+            <input type="text" id="teamMemberEmail" placeholder="Email" class="border p-2 mr-2">
+            <input type="text" id="teamMemberSkills" placeholder="Skills (comma-separated)" class="border p-2 mr-2">
+            <button onclick="createTeamMember()" class="bg-blue-500 text-white p-2 rounded">Add Team Member</button>
+            <ul id="teamMemberList" class="list-disc pl-5 mt-2"></ul>
+        </div>
+
+        <!-- Team Member Assignment -->
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">Assign Team Member to Project</h2>
+            <select id="projectSelectForTeam" class="border p-2 mr-2"></select>
+            <select id="teamMemberSelect" class="border p-2 mr-2"></select>
+            <button onclick="assignTeamMemberToProject()" class="bg-green-500 text-white p-2 rounded">Assign</button>
+        </div>
+        
+        <!-- Task Creation -->
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">Create Task</h2>
+            <select id="projectSelect" class="border p-2 mr-2"></select>
+            <input type="text" id="taskTitle" placeholder="Task Title" class="border p-2 mr-2">
+            <input type="text" id="taskDescription" placeholder="Task Description" class="border p-2 mr-2">
+            <input type="text" id="taskSkills" placeholder="Required Skills (comma-separated)" class="border p-2 mr-2">
+            <button onclick="createTask()" class="bg-green-500 text-white p-2 rounded">Create Task</button>
+        </div>
+        
+        <!-- Task List -->
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">Tasks</h2>
+            <ul id="taskList" class="list-disc pl-5"></ul>
+        </div>
+        
+        <!-- AI Assistant -->
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">AI Assistant</h2>
+            <select id="aiProjectSelect" class="border p-2 mr-2"></select>
+            <input type="text" id="aiQuestion" placeholder="Ask a question" class="border p-2 mr-2">
+            <button onclick="askAI()" class="bg-purple-500 text-white p-2 rounded">Ask AI</button>
+            <div id="aiResponse" class="mt-2 p-2 bg-white rounded"></div>
+        </div>
+        
+        <!-- Task Actions -->
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">Task Actions</h2>
+            <select id="taskSelect" class="border p-2 mr-2"></select>
+            <button onclick="prioritizeTask()" class="bg-yellow-500 text-white p-2 rounded mr-2">Prioritize Task</button>
+            <button onclick="getSuggestions()" class="bg-green-500 text-white p-2 rounded">Get Suggestions</button>
+            <div id="taskActions" class="mt-2 p-2 bg-white rounded"></div>
+        </div>
+        
+        <!-- Project Report -->
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold mb-2">Project Report</h2>
+            <select id="reportProjectSelect" class="border p-2 mr-2"></select>
+            <button onclick="generateReport()" class="bg-blue-500 text-white p-2 rounded">Generate Report</button>
+            <div id="projectReport" class="mt-2 p-2 bg-white rounded"></div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
