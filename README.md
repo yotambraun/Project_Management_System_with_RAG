@@ -2,6 +2,9 @@
 
 This project is an **AI-Powered Project Management System** utilizing **Retrieval-Augmented Generation (RAG)** to streamline the management of complex projects. By combining AI-driven techniques with structured workflows, the system offers enhanced efficiency in task execution, team collaboration, and decision-making processes.
 
+## **Medium Post**
+[Read more about this project on Medium](https://medium.com/p/ff90951930c1)
+
 ## **Menu Screen**
 ![Menu Screen](menu.png)
 
