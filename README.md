@@ -1,9 +1,6 @@
-# **AI-Powered Project Management System with RAG**
+# **Project Management System with RAG**
 
-This project is an **AI-Powered Project Management System** utilizing **Retrieval-Augmented Generation (RAG)** to streamline the management of complex projects. By combining AI-driven techniques with structured workflows, the system offers enhanced efficiency in task execution, team collaboration, and decision-making processes.
-
-## **Medium Post**
-[Read more about this project on Medium](https://medium.com/p/ff90951930c1)
+This project is an **Project Management System** utilizing **Retrieval-Augmented Generation (RAG)** to streamline the management of complex projects. By combining AI-driven techniques with structured workflows, the system offers enhanced efficiency in task execution, team collaboration, and decision-making processes.
 
 ## **Menu Screen**
 ![Menu Screen](menu.png)
@@ -118,3 +115,10 @@ Suggestions:
 - Identify key factors
 - Develop an optimization algorithm
 ```
+
+## **License**
+
+This project is licensed under the MIT License. You are free to use, modify, and distribute this software as per the terms of the license. See the full license text in the `LICENSE` file included in this repository.
+
+MIT License © 2024 Yotam Braun
+

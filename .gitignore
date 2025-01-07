@@ -1,0 +1,5 @@
+conad_env.txt
+.env
+__pycache__
+apply_app.txt
+test.db
